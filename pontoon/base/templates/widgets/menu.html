@@ -9,7 +9,7 @@
 
 {# Menu item #}
 {% macro item(label, url, is_active, count=0, class=None, icon=None) %}
-  <li {% if is_active %}class="active"{% endif %} dir="rtl">
+  <li {% if is_active %}class="active"{% endif %}>
     <a href="{{ url }}"{% if class %} class="button"{% endif %}>
         {% if icon %}<i class="fas fa-{{ icon }}"></i>{% endif %}
         {{ label }}

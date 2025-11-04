@@ -17,7 +17,7 @@
 
       <ul class="links">
         <li><a href="{{ url('pontoon.teams') }}">Teams</a></li>
-        <li><a href="{{ url('pontoon.projects') }}">Projects</a></li>
+        <li><a href="{{ url('pontoon.projects') }}">פרויקטים</a></li>
         <li><a href="{{ url('pontoon.contributors') }}">Contributors</a></li>
         {% if user.is_authenticated and user.is_superuser %}
         <li><a href="{{ url('pontoon.messaging.compose') }}">Messaging</a></li>
@@ -50,9 +50,9 @@
               {% endif %}
 
               <li><a href="{{ url('pontoon.terms') }}" rel="noopener noreferrer" target="_blank"><i class="fas fa-gavel fa-fw"></i>Terms of Use</a></li>
-              <li><a href="https://github.com/mozilla/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>Hack it on GitHub</a></li>
-              <li><a href="https://github.com/mozilla/pontoon/discussions" rel="noopener noreferrer" target="_blank"><i class="fas fa-comment-dots fa-fw"></i>Give Feedback</a></li>
-              <li><a href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fas fa-life-ring fa-fw"></i>Help</a></li>
+              <!--li><a href="https://github.com/mozilla/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>Hack it on GitHub</a></li-->
+              <!--li><a href="https://github.com/mozilla/pontoon/discussions" rel="noopener noreferrer" target="_blank"><i class="fas fa-comment-dots fa-fw"></i>Give Feedback</a></li-->
+              <!--li><a href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/" rel="noopener noreferrer" target="_blank"><i class="fas fa-life-ring fa-fw"></i>Help</a></li-->
 
               {% if user.is_authenticated %}
               <li class="horizontal-separator"></li>

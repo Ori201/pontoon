@@ -67,12 +67,12 @@
               {% endif %}
 
               {% if user.is_authenticated %}
-                <li><a href="{{ url('pontoon.contributors.settings') }}"><i class="fas fa-cog fa-fw"></i>Settings</a></li>
+                <li><a href="{{ url('pontoon.contributors.settings') }}"><i class="fas fa-cog fa-fw"></i>הגדרות</a></li>
 
                 {% if settings.AUTHENTICATION_METHOD == 'django' %}
-                <li id="standalone-sign-out"><a href="{{ url('standalone_logout') }}" title="{{ user.email|nospam }}"><i class="fas fa-sign-out-alt fa-fw"></i>Sign out</a></li>
+                <li id="standalone-sign-out"><a href="{{ url('standalone_logout') }}" title="{{ user.email|nospam }}"><i class="fas fa-sign-out-alt fa-fw"></i>התנתק</a></li>
                 {% else %}
-                <li id="sign-out"><a href="{{ url('account_logout') }}" title="{{ user.email|nospam }}">{{ SignOut.csrf_form() }}<i class="fas fa-sign-out-alt fa-fw"></i>Sign out</a></li>
+                <li id="sign-out"><a href="{{ url('account_logout') }}" title="{{ user.email|nospam }}">{{ SignOut.csrf_form() }}<i class="fas fa-sign-out-alt fa-fw"></i>התנתק</a></li>
                 {% endif %}
 
               {% endif %}
